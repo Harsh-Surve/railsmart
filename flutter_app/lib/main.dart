@@ -1,11 +1,11 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'lib/screens/login_screen.dart';
-import 'lib/screens/search_screen.dart';
-import 'lib/screens/results_screen.dart';
-import 'lib/screens/booking_screen.dart';
-import 'lib/screens/ticket_screen.dart';
-import 'lib/services/app_state.dart';
+import 'screens/login_screen.dart';
+import 'screens/search_screen.dart';
+import 'screens/results_screen.dart';
+import 'screens/booking_screen.dart';
+import 'screens/ticket_screen.dart';
+import 'services/app_state.dart';
 
 void main() {
   runApp(const RailSmartApp());
@@ -27,11 +27,11 @@ class RailSmartApp extends StatelessWidget {
         ),
         initialRoute: '/',
         routes: {
-          '/': (context) => LoginScreen(),
-          '/search': (context) => SearchScreen(),
-          '/results': (context) => ResultsScreen(),
-          '/booking': (context) => BookingScreen(),
-          '/ticket': (context) => TicketScreen(),
+          '/': (context) => const LoginScreen(),
+          '/search': (context) => const SearchScreen(),
+          '/results': (context) => const ResultsScreen(),
+          '/booking': (context) => const BookingScreen(),
+          '/ticket': (context) => const TicketScreen(),
         },
       ),
     );
